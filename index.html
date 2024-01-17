@@ -18,175 +18,69 @@
       text-transform: uppercase;
     }
 
-    .text-section {
+    .entry-page {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 20px;
     }
 
-    .tabs {
+    .buttons {
       display: flex;
       justify-content: center;
-      margin-top: 10px; /* Adiciona espaço acima dos botões */
+      margin-top: 20px;
     }
 
-    .tab {
+    .button {
       cursor: pointer;
-      padding: 10px;
-      margin: 0 10px; /* Adiciona espaço entre os botões */
+      padding: 15px;
+      margin: 0 15px;
       background-color: #435004;
       color: #fff;
       border: none;
       border-radius: 5px;
       outline: none;
-      transition: background-color 0.3s; /* Adiciona transição à cor de fundo */
+      transition: background-color 0.3s;
     }
 
-    .tab:hover {
-      background-color: #788b54; /* Cor de fundo ao passar o mouse */
-    }
-
-    .text-content {
-      width: 45%;
-      display: none;
-      margin-top: 20px; /* Adiciona espaço entre os botões e o conteúdo */
-    }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin: 20px;
-    }
-
-    .gallery img {
-      width: 250px;
-      height: 188px;
-      object-fit: cover;
-      margin: 10px;
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      transition: transform 0.3s;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .gallery img:hover {
-      transform: scale(1.1);
-      border-color: #435004;
-    }
-
-    .modal {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      justify-content: center;
-      align-items: center;
-    }
-
-    .modal-content {
-      max-width: 80%;
-      max-height: 80%;
-      overflow: hidden;
-    }
-
-    .modal img {
-      width: 100%;
-      height: auto;
-    }
-
-    .close {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      color: white;
-      font-size: 20px;
-      cursor: pointer;
+    .button:hover {
+      background-color: #355002;
     }
   </style>
 </head>
 <body>
 
-<h1>GALERIA DE IMAGENS</h1>
+<h1>Bem-vindo à Marinha Santiago da Fonte</h1>
 
-<div class="text-section">
-  <div class="tabs">
-    <button class="tab" onclick="showContent('segment1')">Fauna</button>
-    <button class="tab" onclick="showContent('segment2')">Flora</button>
-    <button class="tab" onclick="showContent('segment3')">Marinha Santiago da Fonte</button>
-    <button class="tab" onclick="showContent('segment4')">Marnotos</button>
-  </div>
-
-  <div class="text-content" id="segment1">
-    <p>As salinas litorais, enquanto habitats artificiais, não estão diretamente sujeitas à influência das marés, apresentando uma notável diversidade de espécies de aves ao longo de todo o ano. A preferência das aves pelas salinas de Aveiro pode ser atribuída a diversos fatores, destacando-se a sua localização costeira, a ausência de invernos rigorosos, a disponibilidade de água ao longo de todo o ano e um forte gradiente de salinidade, onde os cristalizadores possuem um nível de salinidade superior aos viveiros.
-    </p>
-  </div>
-
-  <div class="text-content" id="segment2">
-    <p>Os sapais e prados marinhos são habitats essenciais nos estuários, destacando-se na Ria de Aveiro. Os prados marinhos, predominantemente ocupados pelo sirgo (zostera noltei), estendem-se por zonas intertidais e áreas mais profundas. Nas regiões marginais, em solos lodosos e arenosos, surgem os sapais, ricos em plantas tolerantes ao sal. Reconhecido como uma das zonas mais produtivas da biosfera, o sapal beneficia da chegada natural de nutrientes pelo movimento das marés, sedimentação e decomposição de organismos (Biorede)</p>
-  </div>
-
-  <div class="text-content" id="segment3">
-    <p>A Marinha de Santiago da Fonte destaca-se como a única das cinco salinas pertencentes à Universidade de Aveiro que foi alvo de um processo de recuperação bem-sucedido. É, igualmente, uma das nove salinas existentes na Ria de Aveiro que continua a produzir sal utilizando métodos exclusivamente artesanais, conforme dados de 2016. A gestão deste espaço, onde os marnotos (salineiros) desempenham um papel fundamental, foi formalizada através de um contrato de arrendamento, sendo a responsabilidade pela venda do produto atribuída a estes trabalhadores.
-    </p>
-  </div>
-
-  <div class="text-content" id="segment4">
-    <p>A atividade típica de extração de sal artesanalmente é património cultural, pois o conhecimento foi transmitido de pais para filhos durante muitas gerações.  Além disso, a produção de sal e o, também associado, comércio naval são considerados património histórico por serem atividades económicas desde 959, como comprova o testamento da Condessa Mumadona Dias ao Cenóbio (mosteiro) de Guimarães. Este testamento refere a cidade de Aveiro com outro nome, o mais antigo topónimo - Alavario et Salinas, que revela a importância do valioso sal. A beleza paisagística inconfundível desta valiosa zona húmida é reconhecida pelos diversos estatutos de proteção da natureza atribuídos (ex: ZPE e SIC), salientando a necessidade de valorizar, conservar e promover de forma sustentável o vasto património natural que é a Ria de Aveiro (incluindo as salinas) (Câmara Municipal de Aveiro).
-    </p>
-  </div>
-
-</div>
-
-<div class="gallery">
-  <a href="images/Barraco.jpg" target="_blank"><img src="images/Barraco.jpg" alt="Entrada da Marinha"></a>
-  <a href="images/Planta.jpg" target="_blank"><img src="images/Planta.jpg" alt="Planta"></a>
-  <a href="images/Marinha.jpg" target="_blank"><img src="images/Marinha.jpg" alt="Marinha"></a>
-  <a href="images/Plantinhas.jpg" target="_blank"><img src="images/Plantinhas.jpg" alt="Plantinhas"></a>
-  <a href="images/Feno.jpg" target="_blank"><img src="images/Fenos.jpg" alt="Feno"></a>
-  <a href="images/canudos.jpg" target="_blank"><img src="images/canudos.jpg" alt="canudos"></a>
-  <a href="images/Phragmites_australis.jpg" target="_blank"><img src="images/Phragmites_australis.jpg" alt="Phragmites australis"></a>
-  <!-- Adicione mais imagens conforme necessário -->
-</div>
-
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img id="modalImage" src="" alt="Modal Image">
+<div class="entry-page">
+  <div class="buttons">
+    <button class="button" onclick="navigate('fauna')">Fauna</button>
+    <button class="button" onclick="navigate('flora')">Flora</button>
+    <button class="button" onclick="navigate('historia')">História da Marinha</button>
+    <button class="button" onclick="navigate('producao')">Produção de Sal</button>
   </div>
 </div>
 
 <script>
-  function openModal(imageSrc) {
-    document.getElementById("modalImage").src = imageSrc;
-    document.getElementById("myModal").style.display = "flex";
-  }
-
-  function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-  }
-
-  function showContent(contentId) {
-    var contents = document.querySelectorAll('.text-content');
-    contents.forEach(function(content) {
-      content.style.display = 'none';
-    });
-
-    var selectedContent = document.getElementById(contentId);
-    selectedContent.style.display = 'block';
-  }
-
-  window.onclick = function(event) {
-    var modal = document.getElementById("myModal");
-    if (event.target == modal) {
-      closeModal();
+  function navigate(section) {
+    // Redirecionar para as páginas específicas com base na seção escolhida
+    switch (section) {
+      case 'fauna':
+        window.location.href = 'galeria1.html'; // Substitua com o nome do seu arquivo Fauna
+        break;
+      case 'flora':
+        window.location.href = 'galeria1.html'; // Substitua com o nome do seu arquivo Flora
+        break;
+      case 'historia':
+        window.location.href = 'galeria-marinha.html'; // Substitua com o nome do seu arquivo História
+        break;
+      case 'producao':
+        window.location.href = 'galeria1.html'; // Substitua com o nome do seu arquivo Produção de Sal
+        break;
+      default:
+        break;
     }
-  };
+  }
 </script>
 
 </body>

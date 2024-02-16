@@ -3,19 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fff5c0;
+      background-image: url('images/background.jpg'); /* Mesma imagem de fundo */
+      background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a tela */
+      background-position: center; /* Centraliza a imagem na tela */
     }
 
     h1 {
       text-align: center;
-      color: #435004;
-      margin: 20px 0;
+      color: #fff5c0; /* Alterado para a cor #fff5c0 */
+      margin: 20px 0 10px; /* Ajustei o espaço superior e inferior e reduzi entre o h1 e os botões */
       text-transform: uppercase;
+      font-size: 60px; /* Tamanho da fonte aumentado */
+      font-weight: 400; /* Deixei a fonte menos grossa */
+      font-family: 'Anton', sans-serif; /* Utilizei a fonte Anton */
     }
 
     .text-section {
@@ -35,22 +42,30 @@
       cursor: pointer;
       padding: 10px;
       margin: 0 10px; /* Adiciona espaço entre os botões */
-      background-color: #435004;
-      color: #fff;
+      background-color: transparent; /* Botões transparentes */
+      color: #92a04d; /* Cor do texto dos botões */
       border: none;
       border-radius: 5px;
       outline: none;
-      transition: background-color 0.3s; /* Adiciona transição à cor de fundo */
+      transition: color 0.3s; /* Transição da cor do texto */
+      font-size: 20px; /* Tamanho da fonte dos botões */
+      font-family: 'Anton', sans-serif; /* Utilizei a fonte Anton */
     }
 
     .tab:hover {
-      background-color: #788b54; /* Cor de fundo ao passar o rato */
+      color: #435004; /* Define a cor do texto ao passar o mouse */
     }
 
     .text-content {
-      width: 45%;
+      width: 60%; /* Ajuste na largura */
       display: none;
-      margin-top: 20px; /* Adiciona espaço entre os botões e o conteúdo */
+      margin-top: 20px;
+      color: #fff;
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px; /* Aumento do tamanho da fonte */
+      text-align: justify; /* Justificação do texto */
+      line-height: 1.5; /* Espaçamento entre linhas */
     }
 
     .gallery {
@@ -113,19 +128,20 @@
       position: absolute;
       top: 10px;
       left: 10px;
-      background-color: #435004;
-      color: #fff;
+      background-color: transparent; /* Botão transparente */
+      color: #92a04d; /* Cor do texto */
       border: none;
       border-radius: 5px;
       padding: 10px;
       cursor: pointer;
       outline: none;
-      transition: background-color 0.3s;
+      transition: color 0.3s;
+      font-family: 'Anton', sans-serif; /* Utilizei a fonte Anton */
     }
 
     /* Estilo do botão ao passar o rato */
     .back-button:hover {
-      background-color: #788b54;
+      color: #435004; /* Cor do texto ao passar o mouse */
     }
   </style>
 </head>
